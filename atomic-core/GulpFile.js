@@ -5,6 +5,7 @@ var order = require("gulp-order");
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
+var tag_version = require('gulp-tag-version');
 
 
 gulp.task('styles', function() {
@@ -51,4 +52,10 @@ gulp.task('default',function() {
     gulp.watch('js/*.js',['scripts']);
 });
 
+//Release task
+gulp.task('tag', function() {
+    return gulp.src(['./package.json']).pipe(tag_version());
+});
+
 gulp.task('setup', ['styles']);
+
