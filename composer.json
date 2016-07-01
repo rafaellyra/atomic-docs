@@ -3,5 +3,7 @@
     "description": "Front end code documentation generator.",
     "type": "library",
     "license": "ISC",
-    "require": {}
+    "require": {
+        "twig/twig": "^1.24"
+    }
 }
