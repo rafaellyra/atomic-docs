@@ -1,13 +1,3 @@
-<?php 	
-
-	$current_page = basename($_SERVER['PHP_SELF']);
-   
-?>
-
-    
-
-
-
 <div class="atoms-side_show-small ">
 	<span class="toggle-line"></span>
 	<span class="toggle-line"></span>
@@ -30,7 +20,9 @@
 
 	<nav>
 		<ul class="atoms-nav">
-			<?php include ("categories/atomic-nav.php");?>
+
+			{% include 'categories/atomic-nav.html.twig' %}
+
       <li class="catAdd"><a class="aa_js-actionOpen aa_actionBtn" href="atomic-core/categories/_catActions.php"><span class="fa fa-plus"></span> Add / Delete Category</a></li>
 		</ul>
 		 

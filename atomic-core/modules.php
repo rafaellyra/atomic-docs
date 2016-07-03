@@ -3,7 +3,7 @@
 	
 	
 	<div class="grid-row atoms-container">
-			<?php include ("sidebar.php");?>
+			<?php include("sidebar.php");?>
 			
 			
 			<div class="atoms-main">
